@@ -1,0 +1,343 @@
+/* google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+
+/* overall styles  */
+* {
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+section {
+    background-color: whitesmoke;
+    /* max-width: 800px; */
+}
+
+a {
+    text-decoration: none;
+}
+
+/*............................
+          header start 
+ ........................... */
+.header-part {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 2px solid rgb(62, 62, 71);
+    border-radius: 10px;
+    background-color: rgb(28, 28, 60);
+    padding: 1.5em;
+    margin: 0 1em;
+}
+
+.header-1st {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    justify-content: center;
+}
+
+.header-part :hover {
+    transition: 1s;
+    transform: scale(1.05, 1.05);
+}
+
+.heading h2 {
+    font-family: cursive;
+    color: rgb(255, 254, 212);
+    font-size: 3em;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 254, 212);
+    color: purple;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.button h4 {
+    margin: 0px;
+}
+
+.head-img {
+    width: 100%;
+}
+
+.icon {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.header-2nd {
+    display: flex;
+    justify-content: center;
+}
+
+/* header end  */
+
+/*....................
+  main part start 
+..................... */
+
+.main-part {
+    display: grid;
+    grid-template-columns: 400px auto;
+    padding: 2.5em;
+    margin: 2.5em;
+}
+
+/* main-left start */
+.main-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(28, 28, 60);
+    border-radius: 10px;
+    border: 5px solid black;
+    padding: 10px;
+    margin-top: 15px;
+    height: 350px;
+}
+
+.button-left {
+    width: 250px;
+    height: 75px;
+    border-radius: 10px;
+    margin: 15px;
+    font-size: larger;
+    font-weight: bolder;
+    background-color: rgb(255, 255, 255);
+}
+
+.button-blog {
+    background-color: rgb(255, 254, 212);
+    font-weight: bolder;
+}
+
+.button-blog a {
+    color: rgb(28, 28, 60);
+}
+
+/* main left end  */
+
+/* main right start  */
+
+.main-right-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.main-right {
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.right-title {
+    color: black;
+}
+
+.main-img img {
+    width: 100%;
+}
+
+.main-details {
+    width: 100%;
+}
+
+.see-more {
+    display: none;
+}
+
+.right-buttons button {
+    border: 2px solid gray;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    font-weight: bolder;
+}
+
+.right-info {
+    color: gray;
+}
+
+.clock {
+    margin-right: 20px;
+}
+
+.flag-right-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.flag-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 14px;
+    padding: 10px;
+    box-shadow: .5px .5px 6px black;
+}
+
+.flag-right-flag {
+    display: flex;
+    gap: 10px;
+}
+
+.flag-right-h3,
+.flag-right-p {
+    color: black;
+}
+
+/* main right end  */
+/*....................
+       main end 
+..................... */
+
+
+/*....................
+    footer part start 
+..................... */
+.footer {
+    background-color: black;
+    padding: 2.5em;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+}
+
+.goal {
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+.hr {
+    width: 70%;
+}
+
+.footer-end {
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    gap: 20px;
+
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    color: white;
+}
+
+.footer-social a {
+    color: white;
+}
+
+/*....................
+    footer part start 
+..................... */
+
+@media only screen and (max-width: 576px) {
+    .header-part {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-part {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .main-left {
+        background-color: white;
+        border: 5px solid white;
+    }
+
+    .main-right-container {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .footer-end {
+        flex-direction: column;
+    }
+
+    .button-blog {
+        background-color: rgb(28, 28, 60);
+
+        font-weight: bolder;
+    }
+
+    .button-blog a {
+        color: rgb(245, 245, 190);
+    }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+
+
+    .main-part {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-left {
+        display: flex;
+        flex-direction: row;
+        background-color: inherit;
+        border: 0;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .button-left {
+        width: 160px;
+    }
+
+    .button-blog {
+        background-color: rgb(28, 28, 60);
+        font-weight: bolder;
+    }
+
+    .button-blog a {
+        color: rgb(245, 245, 190);
+    }
+
+    .main-right-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .main-right-extra {
+        display: none;
+    }
+
+
+
+    .see-more {
+        border: 0;
+        font-size: 1.2rem;
+        border-radius: 10px;
+        color: white;
+        padding: 10px;
+        background-color: rgb(28, 28, 60);
+        display: block;
+    }
+}
